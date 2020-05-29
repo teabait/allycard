@@ -178,6 +178,10 @@ input[type=text].community-input {
 		font-size: 40px;
 	}
 
+	h2 {
+		font-size: 40px;
+	}
+
 	.subheader {
 		font-size: 18px;
 	}
@@ -188,6 +192,10 @@ input[type=text].community-input {
 
 	form {
 		margin: 2em auto;
+	}
+
+	.ally-card {
+		padding: 1rem;
 	}
 
 	.vows {
