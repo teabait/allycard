@@ -8,19 +8,8 @@
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
 	<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500;700&family=Lobster&display=swap" rel="stylesheet">
 	
-	<meta property="og:image" content="images/teaho-callingcard.jpg">
+	<meta property="og:image" content="images/allycard.png">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- generics -->
-	<link rel="icon" href="icons/favicon-16.png" sizes="16x16">
-	<link rel="icon" href="icons/favicon-32.png" sizes="32x32">
-	<link rel="icon" href="icons/favicon-128.png" sizes="128x128">
-	<link rel="icon" href="icons/favicon-192.png" sizes="192x192">
-	<!-- Android -->
-	<link rel="shortcut icon" sizes="196x196" href=“icons/favicon-196.png">
-
-	<!-- iOS -->
-	<link rel="apple-touch-icon" href="icons/favicon-152.png" sizes="152x152">
-	<link rel="apple-touch-icon" href="icons/favicon-180.png" sizes="180x180">
 </head>
 <body>
 	<div class="no-print">
@@ -54,7 +43,7 @@
 		</form>
 	</div>
 	
-	<div class="ally-card-holder">
+	<div class="ally-card-holder no-print">
 		<div id="ally-card" class="ally-card">
 		<h2>I am an ally</h2>
 		<p>This card certifies that</p>
@@ -67,10 +56,12 @@
 	<a class="button print-button" href="">Print my card</a>
 	</div>
 
-	<h4>Be a good ally! Tell your friends to get their Ally Card.</h4>
-	<ul class="social-links">
+	<h1 class="print-only">There is no such thing as an ally card. Do the work and stop asking for a pat on the back.</h1>
+
+	<h4 class="no-print">Be a good ally! Tell your friends to get their Ally Card.</h4>
+	<ul class="social-links no-print">
 		<li><a class="button social fb" id="facebookShareLink" href=""><img src="images/fb.png"></a></li>
-		<li><a class="button social twitter" id="twitterShareLink" href="https://twitter.com/intent/tweet?url=https://google.com"><img src="images/twitter.png"></a></li>
+		<li><a class="button social twitter" id="twitterShareLink" href="https://twitter.com/intent/tweet?url=https://allycard.us"><img src="images/twitter.png"></a></li>
 	</ul>
 </body>
 <script type="text/javascript">
@@ -93,7 +84,7 @@
 	});
 
 	$("#facebookShareLink").on("click",function(){
-	    var fbpopup = window.open("https://www.facebook.com/sharer/sharer.php?u=http://stackoverflow.com", "pop", "width=600, height=400, scrollbars=no");
+	    var fbpopup = window.open("https://www.facebook.com/sharer/sharer.php?u=http://allycard.us", "pop", "width=600, height=400, scrollbars=no");
 	    return false;
 	});
 </script>
