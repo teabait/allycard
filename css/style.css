@@ -169,38 +169,42 @@ input[type=text].community-input {
 	display: inline-block;
 }
 
+.print-only {
+	display: none;
+}
+
 @media only screen and (max-width: 780px) {
-  h1 {
-  	font-size: 40px;
-  }
+	h1 {
+		font-size: 40px;
+	}
 
-  .subheader {
-  	font-size: 18px;
-  }
+	.subheader {
+		font-size: 18px;
+	}
 
-  hr {
-  	margin: 2em auto;
-  }
+	hr {
+		margin: 2em auto;
+	}
 
-  form {
-  	margin: 2em auto;
-  }
+	form {
+		margin: 2em auto;
+	}
 
-  .vows {
-  	margin: 0 auto 1em;
-  }
+	.vows {
+		margin: 0 auto 1em;
+	}
 
-  .social img {
-  	height: 40px;
-  }
+	.social img {
+		height: 40px;
+	}
 
-  .button.social {
-  	margin: 0 .5em;
-  }
+	.button.social {
+		margin: 0 .5em;
+	}
 
-  .get-card, .print-card {
-  	margin-top: 1em;
-  }
+	.get-card, .print-card {
+		margin-top: 1em;
+	}
 	.mobile {
 		display: inline-block;
 	}
@@ -248,10 +252,6 @@ input[type=text].community-input {
 	.get-card, .print-card {
 		margin-top: 1em;
 	}
-}
-
-.print-only {
-	display: none;
 }
 
 @media print {
