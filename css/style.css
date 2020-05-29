@@ -1,0 +1,173 @@
+html {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+body {
+	font-family: 'Barlow', sans-serif;
+	background: #FECCB8;
+	position: relative;
+	color: #355C7D;
+	font-size: 20px;
+	width: 100%;
+	box-sizing: border-box;
+	text-align: center;
+	padding: 3em;
+	line-height: 1.4;
+}
+
+h1 {
+	font-size: 100px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+h2 {
+	font-size: 52px;
+	color: #C0A16C;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.form-subheader {
+	font-weight: bold;
+}
+
+.subheader {
+	margin: 1em auto;
+	font-size: 32px;
+    max-width: 916px;
+}
+
+hr {
+	border-top: 1px solid #355C7D;
+    border-bottom: 0;
+    width: 200px;
+    margin: 3em auto;
+}
+
+form {
+	margin: 3em auto;
+}
+
+strong {
+	font-weight: bold;
+}
+
+input[type=text] {
+	margin: 0 .25rem;
+	border: none;
+    background: none;
+    border-bottom: 1px dashed #355C7D;
+    width: 200px;
+    font-size: 20px;
+    color: #355C7D;
+}
+
+input[type=text]:focus {
+	outline: none;
+	border-bottom: 1px solid #355C7D;
+}
+
+input[type=text].community-input {
+	width: 400px;
+}
+
+.vows {
+	margin: 2em;
+}
+
+.button {
+	color: #355C7D;
+	text-transform: uppercase;
+	font-weight: bold;
+	border: 1px solid #355C7D;
+	padding: 1em;
+	border-radius: 3px;
+	text-decoration: none;
+	display: inline-block;
+}
+
+.button:hover,
+.button:focus {
+	background: #355C7D;
+	color: #FECCB8;
+}
+
+.social img {
+	height: 32px;
+}
+
+.button.social {
+	border: none;
+	padding: .25rem;
+	transition: all .3s;
+}
+
+.button.social:hover,
+.button.social:focus {
+	transform: scale(1.15);
+	background: none;
+	color: none;
+}
+
+.ally-card {
+	width: 460px;
+	margin: 3em auto;
+	background: #FFF8EE;
+	border-radius: 8px;
+	padding: 2rem;
+}
+
+.ally-card p {
+	font-size: 16px;
+}
+
+.name {
+	font-family: 'Lobster', cursive;
+	font-size: 40px;
+}
+
+.community {
+	font-weight: bold;
+	text-transform: capitalize;
+}
+
+.warning {
+	display: none;
+	background: #FFEED7;
+	max-width: 600px;
+	padding: .5rem;
+	margin: 1em auto;
+}
+
+.ally-card-holder {
+	display: none;
+}
+
+.ally-card .fine-print {
+	font-size: 10px;
+	font-weight: bold;
+	color: #B4B4B4;
+	text-transform: uppercase;
+	margin-top: 2rem;
+}
+
+.social-links {
+	margin-top: 1em;
+}
+
+.social-links li {
+	display: inline-block;
+}
+
+@media print {
+	.no-print, .print-button {
+		display: none;
+	}
+
+	.ally-card {
+		border: 1px solid gray;
+	}
+}
+

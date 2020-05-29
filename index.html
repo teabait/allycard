@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ally Card</title>
+	<meta name="description" content="Ally Card is a way to prove that you're an ally">
+	<link type="text/css" rel="stylesheet" href="css/reset.css" as="style">
+	<link type="text/css" rel="stylesheet" href="css/style.css" as="style">
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500;700&family=Lobster&display=swap" rel="stylesheet">
+	
+	<meta property="og:image" content="images/teaho-callingcard.jpg">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- generics -->
+	<link rel="icon" href="icons/favicon-16.png" sizes="16x16">
+	<link rel="icon" href="icons/favicon-32.png" sizes="32x32">
+	<link rel="icon" href="icons/favicon-128.png" sizes="128x128">
+	<link rel="icon" href="icons/favicon-192.png" sizes="192x192">
+	<!-- Android -->
+	<link rel="shortcut icon" sizes="196x196" href=“icons/favicon-196.png">
+
+	<!-- iOS -->
+	<link rel="apple-touch-icon" href="icons/favicon-152.png" sizes="152x152">
+	<link rel="apple-touch-icon" href="icons/favicon-180.png" sizes="180x180">
+</head>
+<body>
+	<div class="no-print">
+		<h1>Ally card</h1>
+		<p class="subheader">You&rsquo;re a good person.</p>
+		<p class="subheader">
+			You have good intentions and you care a lot. Now, you can get a card that you can flash whenever anyone questions your behavior.
+		</p>
+
+		<hr>
+
+		<form>
+			<div class="warning">Please enter your <strong>name</strong> and the <strong>community</strong> you're supporting.</div>
+			<span>I,</span><input type="text" id="name-input" name="Name" placeholder="Name"><span> am an ally to</span>
+			<div>
+				<input class="community-input" id="community-input" type="text" name="community" placeholder="Black people, Asian people, the disabled, etc.">.
+			</div>
+
+			<div class="vows">
+				<p class="form-subheader">I vow to:</p>
+				<ol>
+					<li>1. Listen to members of the community.</li>
+					<li>2. Amplify their voices.</li>
+					<li>3. Educate myself.</li>
+					<li>4. Stand up and use my privilege and resources to contribute.</li>
+					<li>5. Speak up and act when I see injustice.</li>
+				</ol>	
+			</div>
+			
+			<a class="button get-card" href="#ally-card">Get my ally card</a>
+		</form>
+	</div>
+	
+	<div class="ally-card-holder">
+		<div id="ally-card" class="ally-card">
+		<h2>I am an ally</h2>
+		<p>This card certifies that</p>
+		<span class="name"></span>
+		<p>is an ally to <span class="community"></span>.</p>
+		<p class="fine-print">
+			This card may be revoked at any time by any member of the community. In fact, it is already meaningless. Do the work and stop asking for a pat on the back.
+		</p>
+	</div>
+	<a class="button print-button" href="">Print my card</a>
+	</div>
+
+	<h4>Be a good ally! Tell your friends to get their Ally Card.</h4>
+	<ul class="social-links">
+		<li><a class="button social fb" id="facebookShareLink" href=""><img src="images/fb.png"></a></li>
+		<li><a class="button social twitter" id="twitterShareLink" href="https://twitter.com/intent/tweet?url=https://google.com"><img src="images/twitter.png"></a></li>
+	</ul>
+</body>
+<script type="text/javascript">
+	$(".get-card").on('click', function(e){
+		e.preventDefault();
+
+		if( $("#name-input").val().length === 0 || $("#community-input").val().length === 0) {
+	        $(".warning").show();
+	    } else {
+	    	$(".name").html($('#name-input').val());
+			$(".community").html($('#community-input').val());
+			$("form").hide();
+			$(".ally-card-holder").show();	
+	    }
+	});
+
+	$(".print-button").on('click', function(e){
+		e.preventDefault();
+		window.print();
+	});
+
+	$("#facebookShareLink").on("click",function(){
+	    var fbpopup = window.open("https://www.facebook.com/sharer/sharer.php?u=http://stackoverflow.com", "pop", "width=600, height=400, scrollbars=no");
+	    return false;
+	});
+</script>
+</html>
