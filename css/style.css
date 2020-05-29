@@ -16,6 +16,10 @@ body {
 	line-height: 1.4;
 }
 
+.mobile {
+	display: none;
+}
+
 h1 {
 	font-size: 100px;
 	text-transform: uppercase;
@@ -197,15 +201,67 @@ input[type=text].community-input {
   .get-card, .print-card {
   	margin-top: 1em;
   }
+	.mobile {
+		display: inline-block;
+	}
+
+	.desktop {
+		display: none;
+	}
+
+	body {
+		padding: 1em;
+	}
+
+	h1 {
+		font-size: 60px;
+	}
+
+	.subheader {
+		font-size: 18px;
+	}
+
+	hr {
+		margin: 2em auto;
+	}
+
+	form {
+		margin: 2em auto;
+	}
+
+	input[type=text].community-input {
+		max-width: 300px;
+	}
+
+	.vows {
+		margin: 1em auto;
+	}
+
+	.social img {
+		height: 40px;
+	}
+
+	.button.social {
+		margin: 0 .5em;
+	}
+
+	.get-card, .print-card {
+		margin-top: 1em;
+	}
+}
+
+.print-only {
+	display: none;
 }
 
 @media print {
 	.no-print, .print-button {
-		display: none;
+		display: none !important;
 	}
 
-	.ally-card {
-		border: 1px solid gray;
+	.print-only {
+		display: block;
+		font-size: 32px;
 	}
 }
 
