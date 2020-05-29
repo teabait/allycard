@@ -16,6 +16,10 @@ body {
 	line-height: 1.4;
 }
 
+.mobile {
+	display: none;
+}
+
 h1 {
 	font-size: 100px;
 	text-transform: uppercase;
@@ -166,42 +170,53 @@ input[type=text].community-input {
 }
 
 @media only screen and (max-width: 780px) {
+	.mobile {
+		display: inline-block;
+	}
+
+	.desktop {
+		display: none;
+	}
 
 	body {
 		padding: 1em;
 	}
 
-  h1 {
-  	font-size: 40px;
-  }
+	h1 {
+		font-size: 60px;
+	}
 
-  .subheader {
-  	font-size: 18px;
-  }
+	.subheader {
+		font-size: 18px;
+	}
 
-  hr {
-  	margin: 2em auto;
-  }
+	hr {
+		margin: 2em auto;
+	}
 
-  form {
-  	margin: 2em auto;
-  }
+	form {
+		margin: 2em auto;
+	}
 
-  .vows {
-  	margin: 0 auto 1em;
-  }
+	input[type=text].community-input {
+		max-width: 300px;
+	}
 
-  .social img {
-  	height: 40px;
-  }
+	.vows {
+		margin: 1em auto;
+	}
 
-  .button.social {
-  	margin: 0 .5em;
-  }
+	.social img {
+		height: 40px;
+	}
 
-  .get-card, .print-card {
-  	margin-top: 1em;
-  }
+	.button.social {
+		margin: 0 .5em;
+	}
+
+	.get-card, .print-card {
+		margin-top: 1em;
+	}
 }
 
 .print-only {
