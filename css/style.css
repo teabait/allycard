@@ -31,6 +31,7 @@ h2 {
 	color: #C0A16C;
 	text-transform: uppercase;
 	font-weight: bold;
+	margin-bottom: .25em;
 }
 
 h4 {
@@ -191,7 +192,6 @@ input[type=text].community-input {
 
 	h2 {
 		font-size: 40px;
-		margin-bottom: .25em;
 	}
 
 	.subheader {
