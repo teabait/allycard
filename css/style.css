@@ -54,6 +54,10 @@ hr {
     margin: 3em auto;
 }
 
+em {
+	font-style: italic;
+}
+
 form {
 	margin: 3em auto;
 }
@@ -243,10 +247,6 @@ input[type=text].community-input {
 
 	hr {
 		margin: 2em auto;
-	}
-
-	em {
-		font-style: italic;
 	}
 
 	form {
