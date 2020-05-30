@@ -245,6 +245,10 @@ input[type=text].community-input {
 		margin: 2em auto;
 	}
 
+	em {
+		font-style: italic;
+	}
+
 	form {
 		margin: 2em auto;
 	}
